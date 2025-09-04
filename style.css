@@ -20,9 +20,94 @@ header{
     background-color: #424147;
     position: fixed;
     top: 0;
-    left: 0;
-    
+    left: 0;    
 }
+
+/* Estilo do botáo menu mobile */
+
+header .btn-menu-mob{
+    display: none;
+    position: relative;
+    z-index: 99999999999999;
+}
+
+header .btn-menu-mob div{
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+    margin: 10px 0;
+    transition: .2s;
+}
+
+header .btn-menu-mob .line-menumob-1{
+    width: 30px;
+}
+
+header .btn-menu-mob .line-menumob-2{
+    width: 20px;
+}
+
+header .btn-menu-mob .line-menumob-1.ativo1{
+    transform: rotate(45deg) translate(30%);
+    background-color: white;
+}
+
+header .btn-menu-mob .line-menumob-2.ativo2{
+    transform: rotate(-45deg) translate(30%);
+    width: 30px;
+    background-color: white;
+}
+
+/* Estilo do menu mobile */
+
+header .menu-mobile{
+    width: 0;
+    height: 0;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    overflow: hidden;
+    transition: .5s;
+}
+
+header .menu-mobile nav {
+    width: 100%;
+}
+
+header .menu-mobile nav ul{
+    list-style-type: none;
+}
+
+header .menu-mobile nav a{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    display: block;
+    transition: .5s;
+}
+
+header .menu-mobile nav a:hover{
+    background-color: white;
+    color: black;
+
+}
+
+header .menu-mobile.abrir{
+    width: 100%;
+    height: 100vh;
+}
+
+body.no-overflow{
+    overflow: hidden;
+}
+
 .cabecalho > .interface{
     display: flex;
     align-items: center;

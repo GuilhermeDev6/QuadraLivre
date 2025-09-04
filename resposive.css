@@ -3,6 +3,10 @@
     header .cabecalho .botoes {
         display: none;
     }
+
+    header .btn-menu-mob{
+    display: block;
+}
 }
 
 @media screen and (max-width: 878px){
