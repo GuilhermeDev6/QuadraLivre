@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="resposive.css" media="screen"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="btn-menu-mob.js" defer></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styleAgendamento.css">
+
+</head>
+<body>
+    <!--MENU-->
+  <header>
+            <section class="cabecalho">
+
+                <div class="interface">
+
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="imgs/logo.png"  alt="logotipo">
+                        </a>
+                        <p>Quadra<br>LivreGO</br></p>
+                    </div>
+<!-- Menu Desktop  -->
+                    <div class="botoes">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="index.html#quadras">QUADRAS</a></li>
+                            <li><a href="agendamento.html">AGENDAMENTO</a></li>
+                        </ul>
+                    </nav>
+                    </div>
+
+                    <div class="btn-social">
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                    </div>
+<!-- Menu Mobile -->
+                    <div class="btn-menu-mob" id="btn-menu-mob">
+                        <div class="line-menumob-1"></div>
+                        <div class="line-menumob-2"></div>
+                    </div>
+
+                    <div class="menu-mobile" id="menu-mobile">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="index.html#quadras">QUADRAS</a></li>
+                            <li><a href="agendamento.html">AGENDAMENTO</a></li>
+                            <li class="social-links">
+                                <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+ 
+    </header>
+
+    <!-- Agendamento -->
+
+    <div class="container">
+        <h1>AONDE VAI SER O <span class="destaque">RACHA</span> HOJE?</h1>
+
+
+        <div class="formulario">
+            
+            <select id="quadra">
+                <option value="quadra1">Praça do avião</option>
+                <option value="quadra2">Garavelo</option>
+                <option value="quadra3">Parque da Criança</option>
+            </select>
+            <button class="buttonAgendamento" id="confirmar">Confirmar Presença</button>
+        </div>
+
+        <div class="grafico">
+            <canvas id="graficoPresencas" width="400" height="200"></canvas>
+        </div>
+    </div>
+
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="scriptGraficoBD.js"></script>
+
+</body>
+</html>
