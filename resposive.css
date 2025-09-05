@@ -42,3 +42,16 @@ section.quadras{
 
     }
 }
+
+/* No mobile empilha */
+@media (max-width: 768px) {
+    .formulario {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .formulario select,
+    .formulario .buttonAgendamento {
+        width: 100%;
+    }
+}
