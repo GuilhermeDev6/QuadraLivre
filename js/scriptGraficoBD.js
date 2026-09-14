@@ -1,4 +1,4 @@
-import { db } from './firebase-config.js';
+import { db } from 'js/firebase-config.js';
 import { collection, addDoc, query, where, onSnapshot, Timestamp, getDocs } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js";
 
 // Gerar um ID aleatório para identificar o usuário no navegador
